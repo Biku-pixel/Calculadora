@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h2>Calculadora</h2>
+    </header>
+    <section>
+        <form action="" onsubmit="return false">
+            <input type="text" id="num1"/>
+            <input type="text" id="num2"/>
+            <button class="btn" onclick="opera('sumar')">sumar</button>
+            <button class="btn" onclick="opera('restar')">restar</button>
+            <button class="btn" onclick="opera('multiplica')">multiplica</button>
+            <button class="btn" onclick="opera('divide')">divide</button>
+        </form>
+    </section>
+    <section>
+        <ul>
+            <li>Respuesta:  <span id="res">0</span></li>
+        </ul>
+    </section>
+    <script src="/JS/script.js"></script>
+</body>
+</html>
