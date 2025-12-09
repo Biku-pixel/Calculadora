@@ -1,0 +1,49 @@
+.content {
+  display: flex;
+  justify-content: center;   /* Centra horizontal */
+  align-items: center;       /* Centra vertical */
+  height: 100vh;             /* Ocupa toda la pantalla para centrar mejor */
+}
+
+/* Modo claro */
+body {
+  background: #f0f0f0;
+  color: #000000;
+}
+
+/* Modo oscuro */
+.dark {
+  background: #1a1a1a;
+  color: #f0f0f0;
+}
+
+.dark-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 22px;
+  border: none;
+  cursor: pointer;
+  
+  background: #ffffff;
+  color: #000000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+
+  transition: all 0.3s ease;
+  z-index: 9999;
+}
+
+/* Estilo del botón cuando el body está en modo oscuro */
+body.dark .dark-toggle {
+  background: #1e1e1e;
+  color: #ffffff;
+  box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+}

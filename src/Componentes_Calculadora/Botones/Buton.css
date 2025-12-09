@@ -1,0 +1,69 @@
+:root {
+  --bg-main: #ffffff;
+  --text-main: #000000;
+  --screen-bg: #eaeaea;
+  --screen-text: #000000;
+
+  /* Botones */
+  --btn-bg: #f4f4f4;
+  --btn-bg-hover: #e2e2e2;
+  --btn-text: #000000;
+  --btn-shadow: rgba(0,0,0,0.15);
+
+  /* Botones (oscuro) */
+  --btn-bg-dark: #333;
+  --btn-bg-hover-dark: #444;
+  --btn-text-dark: #ffffff;
+  --btn-shadow-dark: rgba(255,255,255,0.1);
+}
+/* Activar variables en modo oscuro */
+body.dark {
+  --btn-bg: var(--btn-bg-dark);
+  --btn-bg-hover: var(--btn-bg-hover-dark);
+  --btn-text: var(--btn-text-dark);
+  --btn-shadow: var(--btn-shadow-dark);
+}
+
+/* Contenedor de botones */
+.button-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+/* Cada fila de botones */
+.button-row {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Botones de la calculadora */
+.calc-btn {
+  width: 70px;
+  height: 70px;
+  border: none;
+  border-radius: 14px;
+
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  font-size: 1.5rem;
+  font-weight: 600;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+/* Hover */
+.calc-btn:hover {
+  background: var(--btn-bg-hover);
+}
+
+/* Animación al presionar */
+.calc-btn:active {
+  transform: scale(0.92);
+}

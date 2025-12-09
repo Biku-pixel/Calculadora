@@ -1,0 +1,21 @@
+/* Pantalla */
+.display {
+    color: black;
+    width: 100%;
+    padding: 15px;
+    text-align: right;
+    border-radius: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    overflow: hidden;            /* ← evita que salga */
+    text-overflow: ellipsis;     /* ← muestra "..." si se pasa */
+    white-space: nowrap;         /* ← evita saltos de línea */
+}
+
+.display {
+    transition: font-size 0.2s ease;
+}
+
+.display.long {
+    font-size: 1.2rem;   /* se reduce automáticamente */
+}
